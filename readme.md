@@ -1,8 +1,7 @@
-Repository Init Content
-=======================
+Sample JBoss BPM Suite Project
+==============================
 
-Sample JBoss BPM Suite Project.
-Created using v6.1.0
+A simple example of JBoss BPM Suite Project created using v6.1.0
 
 This project is only consist of 1 human task (approval form) to approve the input form.
 Following is the process diagram:
