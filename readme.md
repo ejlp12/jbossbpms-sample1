@@ -55,7 +55,7 @@ To run the sample you need to:
 3. Add a user with a role `taskadmin` and `user` using following command:
 
    ```
-   ./add-user.sh -a -g admintask,user,manager -u ejlp12 -p Passw0rd!
+   ./add-user.sh -a -g taskadmin,user,manager -u ejlp12 -p Passw0rd!
    ```
 4. Login to business-central using username: ejlp12
  
