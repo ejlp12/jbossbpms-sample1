@@ -48,3 +48,13 @@ Please make sure this following repository is exist in your ~/.m2/setting.xml (W
                 </pluginRepository>
             </pluginRepositories>
           ```
+To run the sample you need to:
+
+1. Login to business-central using user that has `admin` role
+2. Clone this project 
+3. Add a user with a role `taskadmin` and `user` using following command:
+   ```
+   ./add-user.sh -a -g admintask,user -u ejlp12 -p Passw0rd!
+   ```
+4. Login to business-central using username: ejlp12
+ 
