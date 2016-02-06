@@ -55,8 +55,8 @@ To run the sample you need to:
 
 1. Login to business-central using a user that has `admin` role
 2. Clone this project (Authoring > Administration > Repositories > Clone Repository)
-3. Deploy the project
-4. Add a user with a role `taskadmin` and `user` using following command in $JBOSS_BPMS_HOME/bin directory:
+3. Deploy the project (Authoring > Project Authoring, [Open Project Editor], [Build] > Build & Deploy)
+4. Add a user with a role `taskadmin` and `user` using following command in `$JBOSS_BPMS_HOME/bin` directory:
 
    ```
    ./add-user.sh -a -g taskadmin,user,manager -u ejlp12 -p Passw0rd!
