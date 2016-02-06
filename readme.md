@@ -1,14 +1,17 @@
 Sample JBoss BPM Suite Project
 ==============================
 
-A simple example of JBoss BPM Suite Project created using v6.1.0
+A simple example of JBoss BPM Suite Project created using v6.1.0 (Can be imported and run in 6.2)
 
-This project is only consist of 1 human task (approval form) to approve the input form.
+This project is only consist of 1 human task (approval form) that can be viewed by user in group `taskadmin` to approve the input.
+
 Following is the process diagram:
 
 ![image](https://cloud.githubusercontent.com/assets/3068071/8433529/a0d13d20-1f70-11e5-9e6f-a30a455dfb41.png)
 
-Form when starting the process and approve task are shown below:
+![image](https://cloud.githubusercontent.com/assets/3068071/12863375/0f036d5c-cca7-11e5-824b-c670ffc41dd0.png)
+
+Starting the process form and approve task form are shown below:
 
 ![image](https://cloud.githubusercontent.com/assets/3068071/8433673/733661e6-1f71-11e5-8c49-c003559e9311.png)
 
@@ -50,12 +53,14 @@ Please make sure this following repository is exist in your ~/.m2/setting.xml (W
           ```
 To run the sample you need to:
 
-1. Login to business-central using user that has `admin` role
-2. Clone this project 
-3. Add a user with a role `taskadmin` and `user` using following command:
+1. Login to business-central using a user that has `admin` role
+2. Clone this project (Authoring > Administration > Repositories > Clone Repository)
+3. Deploy the project
+4. Add a user with a role `taskadmin` and `user` using following command in $JBOSS_BPMS_HOME/bin directory:
 
    ```
    ./add-user.sh -a -g taskadmin,user,manager -u ejlp12 -p Passw0rd!
    ```
-4. Login to business-central using username: ejlp12
+5. Login to business-central using username: `ejlp12` and password `Passw0rd!`
+6. Start the process definition `simple_proc`
  
